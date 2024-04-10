@@ -4,17 +4,34 @@ import { faAward } from '@fortawesome/free-solid-svg-icons';
 import { faMedal } from '@fortawesome/free-solid-svg-icons';
 import { faRibbon } from '@fortawesome/free-solid-svg-icons';
 import './App.css';
+import { useState } from 'react';
+import { useRef } from 'react';
 
 function App() {
+  const [openAccordion, setOpenAccordion] = useState(null);
+  const handleAccordionClick = (index) => {;
+    if (index !== openAccordion) {
+      setOpenAccordion(index);
+    } else {
+      setOpenAccordion(null);
+    }
+  }
+  const accordionRefs = useRef([]);
   return (
     <div className="App">
       <div className='poem__container'>
-        <div className='poem poem__first'>
+        <div className={`poem poem__first ${openAccordion === 0 ? 'open' : ''}`}
+        ref = {(el) => (accordionRefs.current[0] = el)}
+        >
           <div className='final__place first__place'>
             <FontAwesomeIcon icon={faMedal} />
             1<sup>st</sup> Place</div>
-          <div className='poem__title'>Wild Nights - Wild Nights!</div>
-          <div className='poem__author'>Emily Dickinson</div>
+          <div className='poem__header'
+          onClick = {() => handleAccordionClick(0)}
+          >
+            <div className='poem__title'>Wild Nights - Wild Nights!</div>
+            <div className='poem__author'>by Emily Dickinson</div>
+          </div>
           <div className='poem__text'>
           Wild nights - Wild nights!<br />
           Were I with thee <br />
@@ -32,13 +49,19 @@ function App() {
           In thee!
           </div>
         </div>
-        <div className='poem poem__second'>
+        <div className={`poem poem__second ${openAccordion === 1 ? 'open' : ''}`}
+        ref = {(el) => (accordionRefs.current[1] = el)}
+        >
           <div className='final__place second__place'>
           <FontAwesomeIcon icon={faAward} /> 
             2<sup>nd</sup> Place
           </div>
-          <div className='poem__title'>If I Thought</div>
-          <div className='poem__author'>Dana Schwartz</div>
+          <div className='poem__header'
+          onClick = {() => handleAccordionClick(1)}
+          >
+            <div className='poem__title'>If I Thought</div>
+            <div className='poem__author'>by Dana Schwartz</div>
+          </div>            
           <div className='poem__text'>
           If I thought for just one moment that this would be my last breath,<br />
           I'd tell you I'll love you forever, even beyond death. <br />
@@ -52,13 +75,19 @@ function App() {
           I'd thank the Lord for allowing us to meet.
           </div>
         </div>
-        <div className='poem poem__third'>
+        <div className={`poem poem__third ${openAccordion === 2 ? 'open' : ''}`}
+        ref = {(el) => (accordionRefs.current[2] = el)}
+        >
           <div className='final__place third__place'>
           <FontAwesomeIcon icon={faRibbon} /> 
             3<sup>rd</sup> Place
           </div>
-          <div className='poem__title'>My Melody</div>
-          <div className='poem__author'>Eric Pribyl</div>
+          <div className='poem__header'
+          onClick = {() => handleAccordionClick(2)}
+          >
+            <div className='poem__title'>My Melody</div>
+            <div className='poem__author'>by Eric Pribyl</div>
+          </div>
           <div className='poem__text'>
           Amazing and beautiful, <br />
           not a flower or a tree. <br />
