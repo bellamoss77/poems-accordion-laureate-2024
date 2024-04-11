@@ -1,9 +1,18 @@
+body {
+  background-image: url('https://github.com/bellamoss77/poems-accordion-laureate-2024/blob/main/public/laureateFeather_BG.png?raw=true');
+}
+
 .App {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     min-height: 100vh;
     width: 100vw;
     overflow-x: hidden;
-    background-image: url('./public/laureateFeather_BG.png');
+    margin: auto;
+}
+
+Accordion {
+  margin: auto;
 }
