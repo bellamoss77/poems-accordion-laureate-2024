@@ -1,0 +1,82 @@
+@import url("https://use.typekit.net/seh6wxs.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "sofia-pro", sans-serif;
+}
+
+.poem__container {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  gap: 1rem;
+  margin-top: 25px;
+  margin: auto
+}
+
+.poem {
+  display: flex;
+  flex-direction: column;
+  width: 750px;
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid transparent;
+}
+
+.poem__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+  align-items: center;
+}
+.poem__title {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.poem__header:hover {
+  background: #e7eaed;
+}
+
+.final__place {
+  font-size: 3rem;
+  color: #ced4da;
+  text-align: center
+}
+
+.poem__author {
+  font-style: italic;
+}
+
+.poem__text {
+  padding: 0 2rem 0 2rem;
+  font-size: 0.75rem;
+  line-height: 1.6;
+  overflow: hidden;
+  height: 0;
+  margin: 0 0 25px 20%;
+}
+
+.open {
+  border-color: #087f5b;
+}
+
+.open .poem__header,
+.open .final__place {
+  color: #087f5b;
+}
+
+.open .poem__text {
+  height: auto;
+}
+

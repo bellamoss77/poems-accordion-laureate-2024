@@ -1,0 +1,19 @@
+@import url("https://use.typekit.net/seh6wxs.css");
+header {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 3vh;
+  background: linear-gradient(339deg, rgb(0, 48, 135) 0%, rgb(29, 91, 203) 100%);
+  border: 5px solid #062254;
+  padding: 1rem 2rem;
+}
+
+.page-title {
+  font-family: "sofia-pro", sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  color: #fff;
+  width: 85%;
+}/*# sourceMappingURL=pageTitle.css.map */

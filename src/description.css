@@ -1,0 +1,41 @@
+@import url("https://use.typekit.net/seh6wxs.css");
+
+* {
+    font-family: 'sofia-pro', sans-serif;
+    box-sizing: border-box;
+}
+
+.description-container {
+    margin: 5vh 5vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.body-text {
+    width: 50%;
+    font-weight: 200;
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+img {
+    border: 3px solid #861f41;
+    box-shadow: 2px 2px 5px #3c0719;
+    border-radius: 10px;
+}
+
+.img-caption {
+    width: 425px;
+    line-height: 1.1;
+    font-size: .85rem;
+    font-style: italic;
+    margin-top: .4rem;
+}
