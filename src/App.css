@@ -1,5 +1,8 @@
 body {
-  background-image: url('https://github.com/bellamoss77/poems-accordion-laureate-2024/blob/main/public/laureateFeather_BG.png?raw=true');
+  background-color: black;
+  background: url('https://github.com/bellamoss77/poems-accordion-laureate-2024/blob/main/public/laureateFeather.png?raw=true');
+  background-size: 100% 100%;
+  background-blend-mode: soft-light;
 }
 
 .App {
