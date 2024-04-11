@@ -1,0 +1,26 @@
+@import url("https://use.typekit.net/seh6wxs.css");
+
+* {
+    font-family: 'sofia-pro', sans-serif;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100vw;
+    height: auto;
+    margin: 5vh auto;
+    transform-origin: center;
+    margin-left: 30vw;
+}
+
+.header > h2 {
+    text-align: center;
+    padding: 1rem;
+    background-color: #861f41;
+    width: 35vw;
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #fff;
+    text-decoration: underline;
+    border-radius: 5px;
+}
