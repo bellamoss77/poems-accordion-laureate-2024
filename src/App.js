@@ -5,6 +5,7 @@ import PageTitle from './pageTitle';
 import Description from './description';
 import PoetryHeader from './poetryHeader';
 import VisualArtHeader from './visualArtHeader';
+import ImageGallery from './imageGallery';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <PoetryHeader />
       <Accordion />
       <VisualArtHeader />
+      <ImageGallery />
     </div>
   );
 }

@@ -3,7 +3,7 @@ import './description.css';
 const Description = () => (
     <div className='description-container'>
         <div className='image-container'>
-            <img src="./group-photo.png" className='group-photo' alt="group  of laureate and luminary winners"/>
+            <img src="https://github.com/bellamoss77/poems-accordion-laureate-2024/blob/main/public/group-photo.png?raw=true" className='group-photo' alt="group  of laureate and luminary winners"/>
             <p className='img-caption'>
             L-R: Catherine Selfridge, Taylor Goodwin, Ruth Reid, Kiana Allen, Yingxin "Nicole" Lu, Grace von Elten.
             </p>
