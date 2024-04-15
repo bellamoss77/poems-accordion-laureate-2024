@@ -44,7 +44,7 @@ const Lightbox = ({ images, selectedImage, onClose, onNavigate }) => {
                  className='lightbox-image'
                 />
                 <div className='lightbox-caption'>
-                    <strong>{images[selectedImage].title}</strong> by {images[selectedImage].artist}
+                    <strong><em>{images[selectedImage].title}</em></strong> by {images[selectedImage].artist}
                 </div>
                 <button onClick={onClose} className='lightbox-close'>
                     <FontAwesomeIcon icon={faCircleXmark} />

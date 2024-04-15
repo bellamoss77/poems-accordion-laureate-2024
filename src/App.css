@@ -16,6 +16,7 @@ body {
     margin: auto;
 }
 
-Accordion {
+.poem-container {
   margin: auto;
+  align-self: center;
 }
